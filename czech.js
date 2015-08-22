@@ -3,7 +3,7 @@ var Thanks = (function(thanks) {
 
   
     thanks.translateCzech = function(placeholder) {
-      console.log (happy);
+      $("#words").append(happy);
     }
 return thanks
 })(Thanks);

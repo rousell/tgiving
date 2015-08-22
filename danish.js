@@ -3,7 +3,7 @@ var Thanks = (function() {
 
   return {
     translateDanish: function(danishplace) {
-      console.log (danishplace);
+      $("#words").append(happy);
     }
   };
 })();
