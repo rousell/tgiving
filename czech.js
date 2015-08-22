@@ -1,9 +1,9 @@
-var Thanks = (function() {
+var Thanks = (function(thanks) {
   var happy = "šťastný";
 
-  return {
-    c_getWord1: function() {
-      return happy;
+  
+    thanks.translateCzech = function(placeholder) {
+      console.log (happy);
     }
-  };
-})();
+return thanks
+})(Thanks);

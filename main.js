@@ -5,18 +5,19 @@ $(document).ready(function() {
 
 function language (var1) {
   console.log($("input[id = lang]:checked").val());
+  console.log(var1);
 
   if ($("input[id = lang]:checked").val() === "danish") {
-    Thanks.d_getWord1();
+    Thanks.translateDanish(var1);
   } else if ($("input[id = lang]:checked").val() === "czech") {
-    $("#words").val() = Thanks.c_getWord1();
+    Thanks.translateCzech(var1);
   }
 }
 
 $("#translate").click(function() {
   var textwords = $("#inputText").val();
   console.log(textwords);
-  language();
+  language(textwords);
 });
 
 });
