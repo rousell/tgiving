@@ -3,6 +3,10 @@ var Thanks = (function() {
 
   return {
     translateDanish: function(danishplace) {
+      var inputPhrase = danishplace.toLowerCase().split(" ");
+
+
+      inputPhrase.join(" ");
       $("#words").append(happy);
     }
   };

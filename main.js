@@ -4,8 +4,8 @@ $(document).ready(function() {
 // console.log(status);
 
 function language (var1) {
-  console.log($("input[id = lang]:checked").val());
-  console.log(var1);
+  // console.log($("input[id = lang]:checked").val());
+  // console.log(var1);
 
   if ($("input[id = lang]:checked").val() === "danish") {
     Thanks.translateDanish(var1);
@@ -16,7 +16,7 @@ function language (var1) {
 
 $("#translate").click(function() {
   var textwords = $("#inputText").val();
-  console.log(textwords);
+  // console.log(textwords);
   language(textwords);
 });
 
