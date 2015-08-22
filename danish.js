@@ -1,6 +1,9 @@
-var Thanks = (function(thanks){
+var Thanks = (function() {
   var happy = "glad";
 
-
-
-})(Thanks);
+  return {
+    d_getWord1: function() {
+      return happy;
+    }
+  };
+})();

@@ -1,27 +1,22 @@
-var cardWords = "Happy Thanksgiving! Eat your weight in turkey!";
-var textwords = document.getElementById("inputText");
-textwords.innerHTML = cardWords;
+$(document).ready(function() {
 
+// "Happy Thanksgiving! Eat your weight in turkey!";
+// console.log(status);
 
-var Thanks = (function() {
-  var happy = "happy";
+function language (var1) {
+  console.log($("input[id = lang]:checked").val());
 
-  return {
-    getWord1: function() {
-      return happy;
-    },
-    setWord1: function(newWord1) {
-      happy = newWord1;
-    }
-  };
-})();
+  if ($("input[id = lang]:checked").val() === "danish") {
+    Thanks.d_getWord1();
+  } else if ($("input[id = lang]:checked").val() === "czech") {
+    $("#words").val() = Thanks.c_getWord1();
+  }
+}
 
+$("#translate").click(function() {
+  var textwords = $("#inputText").val();
+  console.log(textwords);
+  language();
+});
 
-
-
-
-
-var someVar = document.getElementById("words");
-someVar.innerHTML = Thanks.getWord1();
-
-
+});
