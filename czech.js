@@ -1,8 +1,8 @@
 var Thanks = (function(thanks) {
   var happy = "šťastný";
 
-  
-    thanks.translateCzech = function(placeholder) {
+
+    thanks.translateToCzech = function(placeholder) {
       $("#words").append(happy);
     }
 return thanks

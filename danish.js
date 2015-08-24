@@ -1,13 +1,23 @@
 var Thanks = (function() {
-  var happy = "glad";
+  var danish = {
+    "happy": "glad",
+    "thanksgiving": "taksigelse",
+    "eat": "spise",
+    "your": "din",
+    "weight": "vægt",
+    "in": "i",
+    "turkey": "Tyrkiet"
+  };
 
   return {
-    translateDanish: function(danishplace) {
+    translateToDanish: function(danishplace) {
       var inputPhrase = danishplace.toLowerCase().split(" ");
-
-
-      inputPhrase.join(" ");
-      $("#words").append(happy);
+      var translated = "";
+      for (var i = 0; i < inputPhrase.length; i++) {
+        translated += (danish[inputPhrase[i]] || inputPhrase[i]) + " ";
+      };
+      console.log(inputPhrase.length);
+      $("#words").append(translated);
     }
   };
 })();

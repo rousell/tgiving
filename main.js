@@ -4,13 +4,10 @@ $(document).ready(function() {
 // console.log(status);
 
 function language (var1) {
-  // console.log($("input[id = lang]:checked").val());
-  // console.log(var1);
-
-  if ($("input[id = lang]:checked").val() === "danish") {
-    Thanks.translateDanish(var1);
-  } else if ($("input[id = lang]:checked").val() === "czech") {
-    Thanks.translateCzech(var1);
+  if ($("input[id = lang]").val() === "danish") {
+    Thanks.translateToDanish(var1);
+  } else if ($("input[id = lang]").val() === "czech") {
+    Thanks.translateToCzech(var1);
   }
 }
 
