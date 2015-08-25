@@ -6,7 +6,7 @@ var Thanks = (function() {
    "your": "din",
    "weight": "vægt",
    "in": "i",
-   "turkey": "Tyrkiet"
+   "turkey": "tyrkiet"
  };
 
  return {
